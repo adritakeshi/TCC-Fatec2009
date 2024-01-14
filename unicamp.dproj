@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{cf2fb621-370c-47ef-8cd7-67fd0ad8c188}</ProjectGuid>
+    <MainSource>unicamp.dpr</MainSource>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+    <DCC_DependencyCheckOutputName>unicamp.exe</DCC_DependencyCheckOutputName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_DebugInformation>False</DCC_DebugInformation>
+    <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+    <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    <DCC_Define>RELEASE</DCC_Define>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_Define>DEBUG</DCC_Define>
+    <DCC_UnitSearchPath>;$(BDS)\Source\DUnit\src</DCC_UnitSearchPath>
+    <DCC_ResourcePath>;$(BDS)\Source\DUnit\src</DCC_ResourcePath>
+    <DCC_ObjPath>;$(BDS)\Source\DUnit\src</DCC_ObjPath>
+    <DCC_IncludePath>;$(BDS)\Source\DUnit\src</DCC_IncludePath>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Delphi.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+<BorlandProject><Delphi.Personality><Parameters><Parameters Name="UseLauncher">False</Parameters><Parameters Name="LoadAllSymbols">True</Parameters><Parameters Name="LoadUnspecifiedSymbols">False</Parameters></Parameters><VersionInfo><VersionInfo Name="IncludeVerInfo">False</VersionInfo><VersionInfo Name="AutoIncBuild">False</VersionInfo><VersionInfo Name="MajorVer">1</VersionInfo><VersionInfo Name="MinorVer">0</VersionInfo><VersionInfo Name="Release">0</VersionInfo><VersionInfo Name="Build">0</VersionInfo><VersionInfo Name="Debug">False</VersionInfo><VersionInfo Name="PreRelease">False</VersionInfo><VersionInfo Name="Special">False</VersionInfo><VersionInfo Name="Private">False</VersionInfo><VersionInfo Name="DLL">False</VersionInfo><VersionInfo Name="Locale">1046</VersionInfo><VersionInfo Name="CodePage">1252</VersionInfo></VersionInfo><VersionInfoKeys><VersionInfoKeys Name="CompanyName"></VersionInfoKeys><VersionInfoKeys Name="FileDescription"></VersionInfoKeys><VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys><VersionInfoKeys Name="InternalName"></VersionInfoKeys><VersionInfoKeys Name="LegalCopyright"></VersionInfoKeys><VersionInfoKeys Name="LegalTrademarks"></VersionInfoKeys><VersionInfoKeys Name="OriginalFilename"></VersionInfoKeys><VersionInfoKeys Name="ProductName"></VersionInfoKeys><VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys><VersionInfoKeys Name="Comments"></VersionInfoKeys></VersionInfoKeys><Source><Source Name="MainSource">unicamp.dpr</Source></Source></Delphi.Personality><ModelSupport>True</ModelSupport></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildBinPath)\Borland.Delphi.Targets" />
+  <ItemGroup>
+    <DelphiCompile Include="unicamp.dpr">
+      <MainSource>MainSource</MainSource>
+    </DelphiCompile>
+    <DCCReference Include="Aluno.pas">
+      <Form>Tbusca</Form>
+    </DCCReference>
+    <DCCReference Include="Aluno3.pas">
+      <Form>FAluno</Form>
+    </DCCReference>
+    <DCCReference Include="Builder.pas">
+      <Form>FrmBuilder</Form>
+    </DCCReference>
+    <DCCReference Include="colaboradores.pas">
+      <Form>colab</Form>
+    </DCCReference>
+    <DCCReference Include="DescMat.pas">
+      <Form>FDescMat</Form>
+    </DCCReference>
+    <DCCReference Include="Feagri.pas" />
+    <DCCReference Include="frmCadCat2.pas">
+      <Form>FCadCat</Form>
+    </DCCReference>
+    <DCCReference Include="frmCadMat2.pas">
+      <Form>FCadMat</Form>
+    </DCCReference>
+    <DCCReference Include="frmConsolidacao.pas">
+      <Form>FConsolidacao</Form>
+    </DCCReference>
+    <DCCReference Include="frmGradeHoraria.pas">
+      <Form>FGrade</Form>
+    </DCCReference>
+    <DCCReference Include="frmimp.pas">
+      <Form>Form3</Form>
+    </DCCReference>
+    <DCCReference Include="horarios.pas" />
+    <DCCReference Include="principal.pas">
+      <Form>formprincipal</Form>
+    </DCCReference>
+    <None Include="ModelSupport\About\default.txaPackage" />
+    <None Include="ModelSupport\About\default.txvpck" />
+    <None Include="ModelSupport\Aluno3\default.txaPackage" />
+    <None Include="ModelSupport\Aluno3\default.txvpck" />
+    <None Include="ModelSupport\Aluno\default.txaPackage" />
+    <None Include="ModelSupport\Atualizar\default.txaPackage" />
+    <None Include="ModelSupport\Atualizar\default.txvpck" />
+    <None Include="ModelSupport\atumulti\default.txaPackage" />
+    <None Include="ModelSupport\atumulti\default.txvpck" />
+    <None Include="ModelSupport\Builder\default.txaPackage" />
+    <None Include="ModelSupport\Builder\default.txvpck" />
+    <None Include="ModelSupport\colaboradores\default.txaPackage" />
+    <None Include="ModelSupport\colaboradores\default.txvpck" />
+    <None Include="ModelSupport\Como_Usar\default.txaPackage" />
+    <None Include="ModelSupport\Como_Usar\default.txvpck" />
+    <None Include="ModelSupport\default.txaPackage" />
+    <None Include="ModelSupport\default.txvpck" />
+    <None Include="ModelSupport\DescMat\default.txaPackage" />
+    <None Include="ModelSupport\DescricaMat\default.txaPackage" />
+    <None Include="ModelSupport\DescricaMat\default.txvpck" />
+    <None Include="ModelSupport\des_eletiva\default.txaPackage" />
+    <None Include="ModelSupport\des_eletiva\default.txvpck" />
+    <None Include="ModelSupport\estudos\default.txaPackage" />
+    <None Include="ModelSupport\estudos\default.txvpck" />
+    <None Include="ModelSupport\FeagriCaminhoCritico\default.txaPackage" />
+    <None Include="ModelSupport\FeagriCaminhoCritico_Yu\default.txaPackage" />
+    <None Include="ModelSupport\Feagri\default.txaPackage" />
+    <None Include="ModelSupport\Feagri\default.txvpck" />
+    <None Include="ModelSupport\formgerador\default.txaPackage" />
+    <None Include="ModelSupport\formgerador\default.txvpck" />
+    <None Include="ModelSupport\frmCadCat2\default.txaPackage" />
+    <None Include="ModelSupport\frmCadMat2\default.txaPackage" />
+    <None Include="ModelSupport\frmcamcrt\default.txaPackage" />
+    <None Include="ModelSupport\frmcamcrt\default.txvpck" />
+    <None Include="ModelSupport\frmConsolidacao\default.txaPackage" />
+    <None Include="ModelSupport\frmcontrole\default.txaPackage" />
+    <None Include="ModelSupport\frmcontrole\default.txvpck" />
+    <None Include="ModelSupport\frmGradeHoraria\default.txaPackage" />
+    <None Include="ModelSupport\frmgrade\default.txaPackage" />
+    <None Include="ModelSupport\frmgrade\default.txvpck" />
+    <None Include="ModelSupport\frmHorario\default.txaPackage" />
+    <None Include="ModelSupport\frmHorario\default.txvpck" />
+    <None Include="ModelSupport\frmimp\default.txaPackage" />
+    <None Include="ModelSupport\frmMultiMat\default.txaPackage" />
+    <None Include="ModelSupport\frmMultiMat\frmMultiMat.txvpck" />
+    <None Include="ModelSupport\grade\default.txaPackage" />
+    <None Include="ModelSupport\grade\default.txvpck" />
+    <None Include="ModelSupport\Grafo\default.txaPackage" />
+    <None Include="ModelSupport\Grafo\default.txvpck" />
+    <None Include="ModelSupport\Horarios\default.txaPackage" />
+    <None Include="ModelSupport\MateriaLista\default.txaPackage" />
+    <None Include="ModelSupport\MateriaLista\MateriaLista.txvpck" />
+    <None Include="ModelSupport\MateriElet\default.txaPackage" />
+    <None Include="ModelSupport\MateriElet\default.txvpck" />
+    <None Include="ModelSupport\MateriObrig\default.txaPackage" />
+    <None Include="ModelSupport\MateriObrig\default.txvpck" />
+    <None Include="ModelSupport\OKCANCL2\default.txaPackage" />
+    <None Include="ModelSupport\OKCANCL2\default.txvpck" />
+    <None Include="ModelSupport\OKCNHLP2\default.txaPackage" />
+    <None Include="ModelSupport\OKCNHLP2\default.txvpck" />
+    <None Include="ModelSupport\PASSWORD\default.txaPackage" />
+    <None Include="ModelSupport\PASSWORD\default.txvpck" />
+    <None Include="ModelSupport\pend\default.txaPackage" />
+    <None Include="ModelSupport\pend\default.txvpck" />
+    <None Include="ModelSupport\PHelp\default.txaPackage" />
+    <None Include="ModelSupport\PHelp\default.txvpck" />
+    <None Include="ModelSupport\principal\default.txaPackage" />
+    <None Include="ModelSupport\principal\default.txvpck" />
+    <None Include="ModelSupport\RecError\default.txaPackage" />
+    <None Include="ModelSupport\RecError\default.txvpck" />
+    <None Include="ModelSupport\Simulacao\default.txaPackage" />
+    <None Include="ModelSupport\Simulacao\default.txvpck" />
+    <None Include="ModelSupport\SistContMat\default.txaPackage" />
+    <None Include="ModelSupport\SistContMat\default.txvpck" />
+    <None Include="ModelSupport\splashs\default.txaPackage" />
+    <None Include="ModelSupport\splashs\default.txvpck" />
+    <None Include="ModelSupport\TABPGDLG\default.txaPackage" />
+    <None Include="ModelSupport\TABPGDLG\default.txvpck" />
+    <None Include="ModelSupport\tab\default.txaPackage" />
+    <None Include="ModelSupport\tab\default.txvpck" />
+    <None Include="ModelSupport\Unit1\default.txaPackage" />
+    <None Include="ModelSupport\Unit1\default.txvpck" />
+    <None Include="ModelSupport\Unit2\default.txaPackage" />
+    <None Include="ModelSupport\Unit2\default.txvpck" />
+    <None Include="ModelSupport\UnitBDAccess\default.txaPackage" />
+    <None Include="ModelSupport\UnitBDAccess\default.txvpck" />
+    <None Include="ModelSupport_unicamp\default.txaPackage" />
+  </ItemGroup>
+</Project>

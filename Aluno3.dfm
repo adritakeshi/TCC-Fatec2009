@@ -1,0 +1,149 @@
+object FAluno: TFAluno
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Aluno'
+  ClientHeight = 115
+  ClientWidth = 315
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnClose = FormClose
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object LBLnome: TLabel
+    Left = 8
+    Top = 11
+    Width = 27
+    Height = 13
+    Caption = 'Nome'
+  end
+  object LBLra: TLabel
+    Left = 8
+    Top = 38
+    Width = 14
+    Height = 13
+    Caption = 'RA'
+  end
+  object LBLcat: TLabel
+    Left = 177
+    Top = 38
+    Width = 43
+    Height = 13
+    Caption = 'Cat'#225'logo'
+  end
+  object BTNnovo: TBitBtn
+    Left = 111
+    Top = 71
+    Width = 75
+    Height = 25
+    Caption = '&Novo'
+    TabOrder = 1
+    OnClick = BTNnovoClick
+  end
+  object BTNAlterar: TBitBtn
+    Left = 111
+    Top = 71
+    Width = 75
+    Height = 25
+    Caption = '&Alterar'
+    TabOrder = 7
+    OnClick = BTNAlterarClick
+  end
+  object BTNLupa: TBitBtn
+    Left = 135
+    Top = 32
+    Width = 32
+    Height = 25
+    TabOrder = 0
+    OnClick = BTNLupaClick
+    Glyph.Data = {
+      36030000424D3603000000000000360000002800000010000000100000000100
+      1800000000000003000000000000000000000000000000000000C8D0D4868686
+      555555777777C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0
+      D4C8D0D4C8D0D4C8D0D4B2B2B28686869696965F5F5F777777C8D0D4C8D0D4C8
+      D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D499CCCC3399CC
+      6666999696965F5F5F777777C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0
+      D4C8D0D4C8D0D4C8D0D4C6D6EF66CCFF3399CC6666999696965F5F5F777777C8
+      D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D499CCFF
+      66CCFF3399CC6666999696965F5F5F969696C8D0D4C8D0D4C8D0D4C8D0D4C8D0
+      D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D499CCFF66CCFF3399CC66669986868686
+      8686A4A0A0666666555555555555666666868686C8D0D4C8D0D4C8D0D4C8D0D4
+      C8D0D499CCFF66CCFF6699CC868686868686CC9999CCCC99F0CAA6CCCC998686
+      86555555868686C8D0D4C8D0D4C8D0D4C8D0D4C8D0D499CCFFCCCCCC969696F0
+      CAA6FFECCCFFFFCCFFFFCCFFFFCCEAEAEA868686555555868686C8D0D4C8D0D4
+      C8D0D4C8D0D4C8D0D4D7D7D7F0CAA6FFECCCFFECCCFFFFCCFFFFFFFFFFFFFFFF
+      FFEAEAEA666666666666C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4F0CAA6FFECCCFF
+      ECCCFFFFCCFFFFCCFFFFFFFFFFFFFFFFFFFFFFCCA4A0A0555555C8D0D4C8D0D4
+      C8D0D4C8D0D4C8D0D4F0CAA6FFECCCF0CAA6FFECCCFFFFCCF1F1F1FFFFFFF1F1
+      F1FFFFCCCCCC99555555C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4F0CAA6FFECCCFF
+      ECCCFFECCCFFFFCCFFFFCCFFFFCCFFFFCCFFFFCCCC9999666666C8D0D4C8D0D4
+      C8D0D4C8D0D4C8D0D4F0CAA6FFECCCFFECCCFFECCCFFECCCFFECCCFFFFCCFFEC
+      CCFFECCCCC9999868686C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4CCCCCCFFECCCFF
+      FFFFF1F1F1FFECCCF0CAA6FFECCCFFECCCF0CAA6996666C8D0D4C8D0D4C8D0D4
+      C8D0D4C8D0D4C8D0D4C8D0D4CCCCCCEAEAEAFFFFFFFFFFCCFFECCCFFECCCF0CA
+      A6CC9999C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4CC
+      CCCCCCCC99CC9999F0CAA6F0CAA6868686C8D0D4C8D0D4C8D0D4}
+  end
+  object BTNok: TBitBtn
+    Left = 216
+    Top = 71
+    Width = 33
+    Height = 25
+    Caption = 'OK'
+    TabOrder = 3
+  end
+  object BTNfechar: TBitBtn
+    Left = 192
+    Top = 71
+    Width = 105
+    Height = 25
+    Caption = '&Iniciar Simula'#231#227'o'
+    Enabled = False
+    TabOrder = 2
+    OnClick = BTNfecharClick
+  end
+  object EDTNome: TEdit
+    Left = 41
+    Top = 8
+    Width = 256
+    Height = 21
+    MaxLength = 50
+    TabOrder = 4
+    OnKeyPress = EDTNomeKeyPress
+  end
+  object EDTra: TEdit
+    Left = 41
+    Top = 35
+    Width = 88
+    Height = 21
+    MaxLength = 20
+    TabOrder = 5
+    OnKeyPress = EDTraKeyPress
+  end
+  object CMBano: TComboBox
+    Left = 226
+    Top = 35
+    Width = 71
+    Height = 21
+    Style = csDropDownList
+    ItemHeight = 13
+    TabOrder = 6
+    OnKeyPress = CMBanoKeyPress
+  end
+  object SetAlu: TADODataSet
+    Connection = formprincipal.Feagri_Conector
+    CursorType = ctStatic
+    CommandText = 'Aluno'
+    CommandType = cmdTable
+    Parameters = <>
+    Left = 48
+    Top = 64
+  end
+end
